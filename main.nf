@@ -3,17 +3,6 @@
 // (2) Reconstruction of evolutionary tree with iqtree
 // (3) Tree visualization using R/ggtree
 
-// Command line parameters
-//params.bucketname="mybucketname"
-//params.threads=2
-
-//params.inputdir = "s3://" + params.bucketname + "/exampledata/"
-//params.outdir = "s3://" + params.bucketname + "/tree_results/"
-//params.inputfile=params.inputdir + "FluA_H3_AA_50.fas"
-//params.msa_view_start = 80
-//params.msa_view_end = 160
-//params.title ="Evolution of Influenza A virus subtyp H3N2"
-//params.subtitle ="Based on hemagglutinin 3 (H3) AA sequences."
 
 // Process for multiple sequence alignment generation using clustalomega.
 process clustalomega{
