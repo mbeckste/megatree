@@ -1,0 +1,11 @@
+{
+    "inputParameters": ["inputfile"],
+    "outputParameters": ["outdir"],
+    "exampleParameters": {
+        "inputfile": "https://raw.githubusercontent.com/mbeckste/megatree/main/exampledata/FluA_H3_AA_50.fas",
+	"title": "Evolution of Influenza A virus subtyp H3N2",
+	"subtitle": "Based on hemagglutinin 3 (H3) AA sequences.",
+	"msa_view_start": 80,
+	"msa_view_end": 160
+    }
+}
