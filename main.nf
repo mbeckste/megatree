@@ -6,6 +6,7 @@
 
 // Process for multiple sequence alignment generation using clustalomega.
 process clustalomega{
+   label 'highmem_large'
    container "biocontainers/clustal-omega:v1.2.1_cv5"
 //   publishDir params.outdir, mode: 'copy'
    shell '/bin/bash', '-euo', 'pipefail'
@@ -26,6 +27,7 @@ process clustalomega{
 
 // Phylogenetic analysis and reconstruction of evolutionary tree
 process iqtree {
+  label 'highmem_medium'
   container "staphb/iqtree:latest"
 //  publishDir params.outdir, mode: 'copy'
   shell '/bin/bash', '-euo', 'pipefail'
@@ -45,6 +47,7 @@ process iqtree {
 
 // Visualize tree in Newick format with R ggtree package
 process visualizetree {
+  label 'small'
 //  container "quay.io/biocontainers/bioconductor-ggtree:3.8.0--r43hdfd78af_0"
   container "xushuangbin/ggtreeextraarticleenv:latest"
   publishDir params.outdir, mode: 'copy'
