@@ -15,14 +15,14 @@
                     "type": "string",
                     "format": "file-path",
                     "description": "Path to a fasta file with multiple amino sequences",
-                    "fa_icon": "fas fa-file"
+                    "fa_icon": "fas fa-file",
                     "help_text": "S3 path or URL to a single fasta file containing multiple amino acid sequences"
                 },
                 "outdir": {
                     "type": "string",
                     "format": "directory-path",
                     "description": "Path to an output directory where the results are written",
-                    "fa_icon": "fas fa-folder-open"
+                    "fa_icon": "fas fa-folder-open",
                     "help_text": "This should be a path to an S3 bucket/folder where the results of the workflow execution are written"
                 }
             },
@@ -58,7 +58,7 @@
                     "minimum": 2,
                     "default": 160,
                     "fa_icon": "fas fa-step-forward",
-                    "description": "End of the displayed part of the MSA".
+                    "description": "End of the displayed part of the MSA",
                     "help_text": "This parameter sets the end coordinate of the displayed part of the multiple sequence alignment"
                 }
             }
