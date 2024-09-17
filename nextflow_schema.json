@@ -42,7 +42,7 @@
             "title": "Visualization",
             "type": "object",
             "description": "Parameter to adjust the visualization of the MSA",
-	    "fa_icon": "fas fa-chart",
+	    "fa_icon": "fas fa-chart-line",
             "default": "",
             "properties": {
                 "title": {
