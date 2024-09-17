@@ -42,15 +42,18 @@
             "title": "Visualization",
             "type": "object",
             "description": "Parameter to adjust the visualization of the MSA",
+	    "fa_icon": "fas fa-chart",
             "default": "",
             "properties": {
                 "title": {
                     "type": "string",
-                    "description": "The title of the generated plot"
+                    "description": "The title of the generated plot",
+		    "fa_icon": "fas fa-heading"
                 },
                 "subtitle": {
                     "type": "string",
-                    "description": "The subtitle of the generated plot"
+                    "description": "The subtitle of the generated plot",
+		    "fa_icon": "fas fa-align-justify"
                 },
                 "msa_view_start": {
                     "type": "integer",
